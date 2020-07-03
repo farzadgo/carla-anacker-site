@@ -23,6 +23,9 @@ ul, ol {
 	margin: 0;
 	padding: 0;
 }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 /* --------------------------- header / nav ------------------------------- */
 .nav {
@@ -109,10 +112,10 @@ ul, ol {
   position: absolute;
   top: 15px;
   right: 0;
-  transform: translateX(-100%);
-  font-size: 36px;
+  transform: translateX(-50%);
   cursor: pointer;
   z-index: 2;
+  /* background-color: gold; */
 }
 .slider-m {
   position: absolute;
@@ -187,15 +190,18 @@ ul, ol {
   position: absolute;
   top: 0;
   right: 0;
-  font-size: 36px;
   cursor: pointer;
   z-index: 2;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 .slider-btn#next {
-  transform: translateX(300%);
+  transform: translate(300%, 40%);
 }
 .slider-btn#prev {
-  transform: translateX(150%);
+  transform: translate(150%, 40%);
+}
+.slider-btn > * {
+  pointer-events: none;
 }
 
 .sec-nav {
@@ -221,10 +227,10 @@ ul, ol {
 /* ------------------------ media queries --------------------------- */
 @media (max-width: 1200px) {
   .slider-btn#next {
-    transform: translateX(-50%);
+    transform: translate(-50%, 40%);
   }
   .slider-btn#prev {
-    transform: translateX(-200%);
+    transform: translate(-200%, 40%);
   }
 }
 @media (max-width: 769px) {

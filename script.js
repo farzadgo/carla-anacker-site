@@ -13,6 +13,8 @@ const sections = document.querySelectorAll('.section');
 
 async function catchNext(elm, index, id) {
   // console.log(index);
+  console.log(elm.parentElement);
+  elm.src = " ";
   const response = await fetch(`${id}/image_${index}.jpg`);
   elm.src = response.url;  
 }
